@@ -15,6 +15,7 @@ abstract class Pessoa {
 	private $bairro;
 	private $pais;
 	private $cidade;
+	private $sexo;
 	private $status;
 	public function getNome() {
 		return $this->nome;
@@ -121,6 +122,7 @@ abstract class Pessoa {
 		$this->cidade = $cidade;
 		return $this;
 	}
+	
 	public function getStatus() {
 		return $this->status;
 	}
@@ -128,5 +130,13 @@ abstract class Pessoa {
 		$this->status = $status;
 		return $this;
 	}
+	public function getSexo() {
+		return $this->sexo;
+	}
+	public function setSexo($sexo) {
+		$this->sexo = $sexo;
+		return $this;
+	}
+	
 }
 ?>

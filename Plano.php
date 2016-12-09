@@ -50,8 +50,5 @@ private $status;
 		return $this;
 	}
 	
-
-
-
 }
 ?>
