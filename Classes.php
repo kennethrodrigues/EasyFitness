@@ -1,23 +1,21 @@
 <?php
-
-abstract class Pessoa{
-
-private  $nome;
-private $rg;
-private $cpf;
-private $telefone;
-private $dtNascimento;
-private $celular;
-private $email;
-private $senha;
-private $cep;
-private $rua;
-private $numero;
-private $complemento;
-private $bairro;
-private $pais;
-private $cidade;
-private $status;
+abstract class Pessoa {
+	private $nome;
+	private $rg;
+	private $cpf;
+	private $telefone;
+	private $dtNascimento;
+	private $celular;
+	private $email;
+	private $senha;
+	private $cep;
+	private $rua;
+	private $numero;
+	private $complemento;
+	private $bairro;
+	private $pais;
+	private $cidade;
+	private $status;
 	public function getNome() {
 		return $this->nome;
 	}
@@ -130,34 +128,10 @@ private $status;
 		$this->status = $status;
 		return $this;
 	}
-		
 }
 
-class Aluno extends Pessoa{
-	private $matricula;
-	private $plano;
-	public function getMatricula() {
-		return $this->matricula;
-	}
-	public function setMatricula($matricula) {
-		$this->matricula = $matricula;
-		return $this;
-	}
-	public function getPlano() {
-		return $this->plano;
-	}
-	public function setPlano($plano) {
-		$this->plano = $plano;
-		return $this;
-	}
-	
-	
-	
-}
-
-class Funcionario extends Pessoa{
+class Funcionario extends Pessoa {
 	private $tipo;
-	
 	public function getTipo() {
 		return $this->tipo;
 	}
@@ -165,9 +139,6 @@ class Funcionario extends Pessoa{
 		$this->tipo = $tipo;
 		return $this;
 	}
-		
 }
-
-
 
 ?>
