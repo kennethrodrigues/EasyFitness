@@ -137,6 +137,7 @@ abstract class Pessoa {
 		$this->sexo = $sexo;
 		return $this;
 	}
+	//sei la
 	
 }
 ?>
